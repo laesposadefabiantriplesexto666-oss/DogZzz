@@ -1,0 +1,6 @@
+{
+  "name": "DogZzz - Sistema de Gestión de Camas para Perros",
+  "description": "Sistema integral de inventario, catálogo visual, punto de venta, entregas y clientes para DogZzz. Especialistas en el descanso que mueve sus colitas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FAF7F2; /* Crema y blanco cálido */
+    color: #382417; /* Café chocolate suave */
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom theme utility classes for DogZzz */
+:root {
+  --color-dogzzz-cream: #FAF7F2;
+  --color-dogzzz-chocolate: #382417;
+  --color-dogzzz-arena: #F0EAE1;
+  --color-dogzzz-sage: #4A6B53;
+  --color-dogzzz-terracotta: #C25E42;
+}
+
+/* Print specific styles for DogZzz receipts */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-receipt, #printable-receipt * {
+    visibility: visible;
+  }
+  #printable-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 24px;
+    background: white !important;
+    color: #2E1B10 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Custom scrollbars with warm arena theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F0EAE1;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4C9BC;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B5A593;
+}
